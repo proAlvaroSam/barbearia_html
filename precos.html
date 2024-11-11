@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preços - Barbearia Stylus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social-icons.css">
+    <link rel="stylesheet" href="css/precos.css">
+</head>
+<body>
+    <!-- Header igual ao das outras páginas -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-cut"></i>
+            </div>
+            <h2>Stylus</h2>
+        </div>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a></li>
+                <li><a href="localizacao.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Localização</span>
+                </a></li>
+                <li><a href="precos.html" class="active">
+                    <i class="fas fa-tags"></i>
+                    <span>Preços</span>
+                </a></li>
+                <li><a href="agendamento.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Agendar</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="precos-hero">
+            <div class="titulo-secao">
+                <div class="icon-price">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h2>Nossos Preços</h2>
+                <div class="subtitulo">Qualidade e valor justo</div>
+                <div class="decorador">
+                    <span></span>
+                    <i class="fas fa-scissors"></i>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="precos-container">
+            <div class="precos-grid">
+                <!-- Serviços Principais -->
+                <div class="categoria-servicos">
+                    <h3>Serviços Principais</h3>
+                    <div class="lista-servicos">
+                        <div class="servico-item">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-cut"></i>
+                                    <span>Corte de Cabelo</span>
+                                </div>
+                                <div class="servico-desc">Corte na tesoura ou máquina</div>
+                            </div>
+                            <div class="servico-preco">R$ 35,00</div>
+                        </div>
+
+                        <div class="servico-item">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-razor"></i>
+                                    <span>Barba</span>
+                                </div>
+                                <div class="servico-desc">Barba completa com toalha quente</div>
+                            </div>
+                            <div class="servico-preco">R$ 25,00</div>
+                        </div>
+
+                        <div class="servico-item destaque">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-star"></i>
+                                    <span>Corte + Barba</span>
+                                </div>
+                                <div class="servico-desc">Combo completo com desconto</div>
+                            </div>
+                            <div class="servico-preco">R$ 55,00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviços Adicionais -->
+                <div class="categoria-servicos">
+                    <h3>Serviços Adicionais</h3>
+                    <div class="lista-servicos">
+                        <div class="servico-item">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span>Coloração</span>
+                                </div>
+                                <div class="servico-desc">Pintura completa</div>
+                            </div>
+                            <div class="servico-preco">R$ 45,00</div>
+                        </div>
+
+                        <div class="servico-item">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-spray-can"></i>
+                                    <span>Hidratação</span>
+                                </div>
+                                <div class="servico-desc">Tratamento capilar</div>
+                            </div>
+                            <div class="servico-preco">R$ 40,00</div>
+                        </div>
+
+                        <div class="servico-item">
+                            <div class="servico-info">
+                                <div class="servico-nome">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Pezinho</span>
+                                </div>
+                                <div class="servico-desc">Acabamento na nuca</div>
+                            </div>
+                            <div class="servico-preco">R$ 15,00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <div class="info-pagamento">
+                <div class="info-card">
+                    <h4>Formas de Pagamento</h4>
+                    <div class="pagamento-icons">
+                        <i class="fas fa-money-bill-wave" title="Dinheiro"></i>
+                        <i class="fas fa-credit-card" title="Cartão de Crédito"></i>
+                        <i class="fas fa-mobile-alt" title="PIX"></i>
+                    </div>
+                    <p>Aceitamos todas as principais formas de pagamento</p>
+                </div>
+                <a href="agendamento.html" class="btn-agendar">
+                    <span>Agende seu Horário</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer igual ao das outras páginas -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Barbearia Stylus</h3>
+                <p class="footer-description">
+                    Especializada em cortes masculinos modernos e tradicionais, 
+                    proporcionando uma experiência única de cuidado e estilo.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/alvaro._.sam/" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <ul class="horario">
+                    <li><span>Segunda - Sexta:</span> 09:00 - 20:00</li>
+                    <li><span>Sábado:</span> 09:00 - 18:00</li>
+                    <li><span>Domingo:</span> Fechado</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="contato">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>(82) 99999-9999</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@stylus.com.br</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>BARBEARIA JAELSON kanxa - Arapiraca/AL</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Barbearia Stylus - Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

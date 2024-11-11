@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização - Barbearia Stylus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social-icons.css">
+    <link rel="stylesheet" href="css/localizacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header igual ao das outras páginas -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-cut"></i>
+            </div>
+            <h2>Stylus</h2>
+        </div>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a></li>
+                <li><a href="localizacao.html" class="active">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Localização</span>
+                </a></li>
+                <li><a href="precos.html">
+                    <i class="fas fa-tags"></i>
+                    <span>Preços</span>
+                </a></li>
+                <li><a href="agendamento.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Agendar</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="localizacao-hero">
+            <div class="titulo-secao">
+                <div class="icon-location">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <h2>Nossa Localização</h2>
+                <div class="subtitulo">Barbearia Jaelson Kanxa - Arapiraca</div>
+                <div class="decorador">
+                    <span></span>
+                    <i class="fas fa-compass"></i>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="localizacao-container">
+            <div class="localizacao-grid">
+                <div class="mapa-container">
+                    <div class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.735844426442!2d-36.35964432496996!3d-9.912149390188794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70424a695010d15%3A0xfca2ad6002267a69!2sBARBEARIA%20JAELSON%20kanxa!5e1!3m2!1sen!2sbr!4v1731356856270!5m2!1sen!2sbr"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="info-content">
+                                <h3>Endereço</h3>
+                                <p>BARBEARIA JAELSON kanxa</p>
+                                <p>Teotônio Vilela - AL</p>
+                                <p>CEP: 01234-567</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-content">
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 09h às 20h</p>
+                                <p>Sábado: 09h às 18h</p>
+                                <p>Domingo: Fechado</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="info-content">
+                                <h3>Contato</h3>
+                                <p>Telefone: (11) 99999-9999</p>
+                                <p>WhatsApp: (11) 99999-9999</p>
+                                <p>Email: contato@stylus.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-parking"></i>
+                            <div class="info-content">
+                                <h3>Facilidades</h3>
+                                <p>Estacionamento próprio</p>
+                                <p>Acesso para cadeirantes</p>
+                                <p>Wi-Fi grátis</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://waze.com" target="_blank" class="btn-rota">
+                        <i class="fas fa-route"></i>
+                        <span>Traçar Rota no Waze</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer igual ao das outras páginas -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Barbearia Stylus</h3>
+                <p class="footer-description">
+                    Especializada em cortes masculinos modernos e tradicionais, 
+                    proporcionando uma experiência única de cuidado e estilo.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/alvaro._.sam/" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <ul class="horario">
+                    <li><span>Segunda - Sexta:</span> 09:00 - 20:00</li>
+                    <li><span>Sábado:</span> 09:00 - 18:00</li>
+                    <li><span>Domingo:</span> Fechado</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="contato">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>(82) 99999-9999</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@stylus.com.br</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>BARBEARIA JAELSON kanxa - Arapiraca/AL</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Barbearia Stylus - Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

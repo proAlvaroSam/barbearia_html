@@ -1,0 +1,189 @@
+.precos-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/precos-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 2rem 6rem;
+    text-align: center;
+}
+
+.icon-price {
+    margin-bottom: 1.5rem;
+}
+
+.icon-price i {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.precos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.precos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.categoria-servicos {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.categoria-servicos:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-servicos h3 {
+    background: #1a1a1a;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.lista-servicos {
+    padding: 2rem;
+}
+
+.servico-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.servico-item:last-child {
+    border-bottom: none;
+}
+
+.servico-item:hover {
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.servico-nome {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.servico-nome i {
+    color: #ffd700;
+}
+
+.servico-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.servico-preco {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.servico-item.destaque {
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1.5rem;
+}
+
+.servico-item.destaque .servico-preco {
+    color: #ffd700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info-pagamento {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.info-card h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.pagamento-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pagamento-icons i {
+    font-size: 2rem;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.pagamento-icons i:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.info-card p {
+    color: #666;
+}
+
+/* Animações */
+.categoria-servicos {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .precos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .servico-nome {
+        justify-content: center;
+    }
+
+    .pagamento-icons {
+        gap: 1.5rem;
+    }
+} 

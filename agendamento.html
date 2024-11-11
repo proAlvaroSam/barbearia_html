@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Barbearia Stylus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social-icons.css">
+    <link rel="stylesheet" href="css/agendamento.css">
+</head>
+<body>
+    <!-- Header igual ao da página inicial -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-cut"></i>
+            </div>
+            <h2>Stylus</h2>
+        </div>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a></li>
+                <li><a href="localizacao.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Localização</span>
+                </a></li>
+                <li><a href="precos.html">
+                    <i class="fas fa-tags"></i>
+                    <span>Preços</span>
+                </a></li>
+                <li><a href="agendamento.html" class="active">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Agendar</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agendamento-hero">
+            <div class="titulo-secao">
+                <h2>Agende seu Horário</h2>
+                <div class="subtitulo">Escolha o melhor momento para você</div>
+                <div class="decorador">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="agendamento-container">
+            <div class="agendamento-grid">
+                <div class="form-section">
+                    <form id="agendamento-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Serviço</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="corte">Corte de Cabelo</option>
+                                <option value="barba">Barba</option>
+                                <option value="corte-barba">Corte + Barba</option>
+                                <option value="tratamento">Tratamento</option>
+                                <option value="coloracao">Coloração</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">Data</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="horario">Horário</label>
+                                <select id="horario" name="horario" required>
+                                    <option value="">Selecione</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacoes">Observações (opcional)</label>
+                            <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-agendar">
+                            <span>Confirmar Agendamento</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Informações Importantes</h3>
+                        <ul>
+                            <li>Chegue 10 minutos antes do horário marcado</li>
+                            <li>Em caso de impedimento, cancele com 2h de antecedência</li>
+                            <li>Consulte nossos preços antes do agendamento</li>
+                            <li>Pagamentos em dinheiro ou cartão</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer igual ao da página inicial -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Barbearia Stylus</h3>
+                <p class="footer-description">
+                    Especializada em cortes masculinos modernos e tradicionais, 
+                    proporcionando uma experiência única de cuidado e estilo.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/alvaro._.sam/" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <ul class="horario">
+                    <li><span>Segunda - Sexta:</span> 09:00 - 20:00</li>
+                    <li><span>Sábado:</span> 09:00 - 18:00</li>
+                    <li><span>Domingo:</span> Fechado</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="contato">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>(82) 99999-9999</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@stylus.com.br</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>BARBEARIA JAELSON kanxa - Arapiraca/AL</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Barbearia Stylus - Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/agendamento.js"></script>
+</body>
+</html> 
